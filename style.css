@@ -1,0 +1,71 @@
+/* Navbar */
+#navbar {
+    background-color: #0096C8;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 1000; /* Coloca el navbar encima de otros elementos */
+}
+#body {
+    background-color: #0096C8;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#navbar.navbar-scrolled {
+    background-color: #0096C8;
+}
+
+#body.navbar-scrolled {
+    background-color: #d0d2d6;
+}
+
+/* Navbar fijo en la parte superior */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Contenido */
+#contenido {
+    margin-top: 56px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: relative; /* Añade posición relativa para z-index funcione */
+    z-index: 1; /* Establece z-index en 1 para que esté debajo del navbar */
+}
+
+/* Carrusel */
+/* Estilos para el carrusel */
+.bg-carrusel {
+    background-color: rgba(180, 198, 218, 0.9); /* Fondo gris con opacidad */
+    z-index: 1;
+}
+
+.carousel-item img {
+    width: 75%; /* Ajusta el ancho de las imágenes al 75% */
+    margin: 0 auto; /* Centra las imágenes */
+}
+
+/* Estilos para los botones de control del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    filter: hue-rotate(180deg); /* Cambia el color a azul */
+    transition: filter 0.5s ease-in-out; /* Agrega transición al cambio de color */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    filter: hue-rotate(0deg); /* Cambia el color a su estado original al pasar el ratón */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+}
+
+.text-shadow {
+    text-shadow: 0.7px 0.7px 1px rgba(0, 0, 0, 0.5);
+}
