@@ -20,6 +20,7 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove('navbar-scrolled');
         body.classList.remove('navbar-scrolled');  // Quitamos la clase al body
     }
+
 });
 
 var imagesMasivos = [
